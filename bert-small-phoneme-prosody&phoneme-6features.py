@@ -174,7 +174,7 @@ for epoch in range(total_epochs):
 
         # Save every 500 steps
         current_step = step + 1
-        if current_step % 500 == 0:
+        if current_step % 100 == 0:
             save_path = os.path.join(save_dir, f"mlm_prosody_step{current_step}.pt")
             torch.save({
                 "model_state_dict": model.state_dict(),
